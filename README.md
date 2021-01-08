@@ -13,6 +13,7 @@ Packaged in this github repository is a tool for Awesemo handbuilders that incor
 ### System requirements
 - To use the extension, you will obviously need to use the Google Chrome web browser
 - To generate the data that the extension uses, you will need to [install python](https://www.python.org/downloads/) in order to run `build_json.py`
+- Data is gathered from my favorite DFS provider, [Awesemo](https://www.awesemo.com/join/#/). Join their team, and hop in premium slack where DFS pros can help you win!
 
 1. From this github repository, you may either:
     - clone the repository if you are used to git - `git clone https://github.com/chanzer0/Awesemo-DK-Extension.git`
