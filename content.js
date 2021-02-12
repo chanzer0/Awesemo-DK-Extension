@@ -59,8 +59,9 @@ function addLineupData() {
     var lineupPlayers = lineupTable.querySelectorAll('[data-test-id="player-name-cell"]');
     var playersInLineup = [];
     lineupPlayers.forEach(playerSpan => {
-        var playerName = playerSpan.children[0].getAttribute("title").normalize("NFD").replace(/[\u0300-\u036f]/g, "");;
+        var playerName = playerSpan.children[0].getAttribute("title");
         if (playerName != null) {
+            playerName = playerName.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
             if (playerDict[playerName] != null) {
                 var str = `${playerDict[playerName]["Fpts"]}${playerDict[playerName]["Ownership %"]}%`;
                 var textContent = playerSpan.parentElement.textContent;
